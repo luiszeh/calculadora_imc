@@ -113,6 +113,10 @@ function App() {
       {fCalcular(peso, altura, setResultado)}
       {fResultado(resultado)}
       {tabelImc()}
+      <footer className="Footer">
+        <p>Todos os direitos reservados à Luis Fernando Fonseca :)</p>
+        <p>Página desenvolvida com React S2.</p>
+      </footer>
     </>
   );
 }
