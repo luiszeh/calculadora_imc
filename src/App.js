@@ -3,7 +3,7 @@ import "./App.css";
 
 const tabelImc = () => {
   return (
-    <table border="1" style={{ borderCollapse: "collapse" }}>
+    <table className="Tabela" border="1">
       <thead>
         <tr>
           <th>Classificação</th>
@@ -42,7 +42,7 @@ const tabelImc = () => {
 
 const fPeso = (p, sp) => {
   return (
-    <div>
+    <div className="Inputs">
       <label>
         Peso (kg)
         <input
@@ -61,7 +61,7 @@ const fPeso = (p, sp) => {
 
 const fAltura = (a, sa) => {
   return (
-    <div>
+    <div className="Inputs">
       <label>
         Altura (m)
         <input
@@ -84,16 +84,18 @@ const fCalcular = (p, a, sr) => {
   };
 
   return (
-    <div>
-      <button onClick={calc}>Calcular</button>
+    <div className="Button-div">
+      <button className="Button" onClick={calc}>
+        Calcular
+      </button>
     </div>
   );
 };
 
 const fResultado = (r) => {
   return (
-    <div>
-      <p>Resultado: {r.toFixed(2)}</p>
+    <div className="Resultado">
+      <p>RESULTADO: {r.toFixed(2)}</p>
     </div>
   );
 };
@@ -105,6 +107,7 @@ function App() {
 
   return (
     <>
+      <h1 className="Title">Qual meu IMC?</h1>
       {fPeso(peso, setPeso)}
       {fAltura(altura, setAltura)}
       {fCalcular(peso, altura, setResultado)}
