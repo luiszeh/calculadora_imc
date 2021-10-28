@@ -1,6 +1,6 @@
 # Boas vindas ao repositório do projeto Calculadora de IMC (Índice de Massa Corporal)!
 
-<a href="qualmeuimc.netlify.app">Clique aqui para calcular seu IMC!</a>
+<a href="https://qualmeuimc.netlify.app/">Clique aqui para calcular seu IMC!</a>
 
 ![imc-print](https://user-images.githubusercontent.com/78225894/139314545-b23e160b-12f9-4713-91a7-e95da8f7de23.jpg)
 
